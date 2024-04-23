@@ -45,11 +45,34 @@ const users = [
 
 // console.log(users[1].id); 
 
-console.log(linkedinUser);
+// console.log(linkedinUser);
 
-console.log(Object.keys(linkedinUser)); // array of the keys
-console.log(Object.values(linkedinUser)); // array of the values
-console.log(Object.entries(linkedinUser)); // form nested array in which first is key and second is value
+// console.log(Object.keys(linkedinUser)); // array of the keys
+// console.log(Object.values(linkedinUser)); // array of the values
+// console.log(Object.entries(linkedinUser)); // form nested array in which first is key and second is value
 
-console.log(linkedinUser.hasOwnProperty('id')); // it is use to check whether (LinkedInUser) class has ('id') property, it returns boolean value
+// console.log(linkedinUser.hasOwnProperty('id')); // it is use to check whether (LinkedInUser) class has ('id') property, it returns boolean value
 
+
+const course = {
+    coursename: "JS by Ri",
+    price: "999",
+    courseInstructor: "Rishav"
+}
+// course. courseInstructor
+
+// destructuring method use to extract any attribute from the object
+const {courseInstructor: instructor} = course // we extract courseInstructor from the course and use as alias instructor
+console.log(instructor);
+
+// {
+//     "name": "Rishav",
+//     "coursename": "jS in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
